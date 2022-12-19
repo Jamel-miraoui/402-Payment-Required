@@ -1,0 +1,43 @@
+  273  cd Documents
+  274  cd isetso
+  275  cd lpic 
+  276  clear 
+  277  chmod
+  278  chmod 640 tp3
+  279  chmod 755 tp3
+  280  clear 
+  281  mkdir tpdroits
+  282  chmod 755 tpdroits 
+  283  cd tpdroits 
+  284  unmask
+  285  umask
+  286  nano essai1.txt
+  287  mkdir rep1
+  288  ls -ld essai1.txt rep1
+  289  chmod 700 essai1.txt
+  290  ls -ld essai1.txt rep1
+  291  nano essai2.txt
+  292  mkdir rep2
+  293  ls -ld rep1 essai1.txt rep2 essai2.txt
+  294  chmod 700 rep2
+  295  ls -ld rep1 essai1.txt rep2 essai2.txt
+  296  umask
+  297  chmod 077 rep1
+  298  chmod 077 essai1.txt
+  299  umask rep1
+  300  umask
+  301  umask essai1.txt
+  302  ls -ld rep1 essai1.txt rep2 essai2.txt
+  303  nano essai3.txt
+  304  mkdir rep3
+  305  ls -ld rep1 essai1.txt rep2 essai2.txt rep3 exxai3.txt
+  306  ls -ld rep1 essai1.txt rep2 essai2.txt rep3 essai3.txt
+  307  history
+  308  clear 
+  309  history 
+  310  clear 
+  311  umask 066
+  312  nano essai3.txt
+  313  mkdir rep3
+  314  ls -ld rep1 essai1.txt rep2 essai2.txt rep3 essai3.txt
+  315  history 
