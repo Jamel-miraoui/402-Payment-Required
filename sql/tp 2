@@ -1,0 +1,10 @@
+select 'Employee' || employee_id || 'quit as' || job_id || 'on' || to_char(end_date,'day "the" ddth "of" month yyyy') as quiting_date from HR.job_history ;
+select last_name ,phone_number,to_number(substr(phone_number,5),'000.0000') from hr.employees where department_id=30
+select last_name , salary, commission_pct  (commission_pct*salary+1000) as monthly_commision from hr.employees where last_name like 'E%' ;
+/*select 'employee '|| employee_id ||' quit as '||job_id||' on '||to_char(end_date,'Day"the" DDth "of" MM YYYY') as QUITTING_DATE from HR.job_history;*/
+/*select last_name,phone_number,to_number(substr(phone_number,5,8),'000.0000')*10000 as LOCAL_NUMBER from HR.Employees where (DEPARTMENT_ID='30');*/
+/*select last_name, salary, nvl(commission_pct,'0'), (nvl(commission_pct,'0')*salary + 1000) as MONTHLY_COMMISION from HR.Employees where last_name like 'E%';*/
+/*select last_name, salary, nvl(commission_pct,'0') as commision, nvl2(commission_pct,'commision earner','Not a commision earner')as check  from HR.Employees where last_name like 'G%';*/
+select first_name, last_name, email, nvl2(nullif(concat(substr(first_name,1,1),upper(last_name)),email),'Email does not match pattern','Match found') as PATTERN from HR.Employees where length(first_name)='4';
+select last_name, salary, email, decode(upper(substr(first_name,1,1) || last_name),email,'match','no match') as pattern from HR.employees where length(first_name)='4';
+select last_name, salary, email, case upper(substr(first_name,1,1) || last_name) when email then 'match' else 'no match'end as pattern from HR.employees where length(first_name)='4';
