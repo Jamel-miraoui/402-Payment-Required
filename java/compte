@@ -1,0 +1,37 @@
+class compte {
+    private double solde =0;
+    public void depot(){
+        if(valeur>0)
+           solde=solde+valeur;
+    }
+    public void retrait(double valeur){
+        if(valeur>0)
+           solde=solde-valeur;
+    }
+    public double getsolde(){
+        return(solde);
+        public void affichesolde(){
+            Systeme.out.print("le solde de compte est de:"+solde) }
+    }
+    public  void viver(double valeur, compte cpt ){
+        if (valeur>0) {
+            cpt.depot(valeur);
+            retrait(valeur)        } 
+    }
+}
+
+class client {
+    private compte[] tcomptes=new compte[100];
+    private int nbcomptes=0;
+    private string nom;
+    public client(string s){
+        nom=s;
+        ajoutercompte();
+    }
+
+    public void ajouutercompte(){
+        nbcomptes+=1;
+        tcomptes[nbcomptes]=new compte();
+    }
+
+}
