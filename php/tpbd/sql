@@ -1,0 +1,6 @@
+CREATE TABLE users( 
+  id   INT AUTO_INCREMENT,
+  log  VARCHAR(100) NOT NULL, 
+  mp VARCHAR(50) NULL, 
+  PRIMARY KEY(user_id)
+);
