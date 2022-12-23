@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\jamel\OneDrive\Bureau\Folder\isetso\402-Payment-Required\eclipse\.metadata\.plugins\org.eclipse.jdt.core
-1630452739.index
-344950780.index
